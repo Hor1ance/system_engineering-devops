@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script loops infinitely printing a message and ignores SIGTERM, printing “I am invincible!!!” instead
+
+trap 'echo "I am invincible!!!"' SIGTERM
+
+while true; do
+  echo "To infinity and beyond"
+  sleep 2
+done
