@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# This script lists all running processes with hierarchy and full formatting
+# List all processes showing UID and command with hierarchy
 
-ps -e -f --forest
+ps -e -o uid,cmd --forest
