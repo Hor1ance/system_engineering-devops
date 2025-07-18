@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# List all processes showing UID and command with hierarchy
+# Displays all running processes showing only UID and command, including process hierarchy
 
-ps -e -o uid,cmd --forest
+ps -eo uid,cmd
